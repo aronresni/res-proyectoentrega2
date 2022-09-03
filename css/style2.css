@@ -179,7 +179,7 @@ hr {
 }
 
 .imgtarjetas {
- max-width: 40%;
+    max-width: 40%;
 }
 
 .invcontenedor div {
@@ -193,7 +193,50 @@ hr {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 23px;
 }
-
+@-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1750px);
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1750px);
+    }
+  }
+  h3 {
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .slidermarcas {
+    background: none;
+    height: 100px;
+  }
+  .slidermarcas .slide-trackmarcas {
+    background: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .slidermarcas .slidemarcas .slidemarcas2 {
+    background: none;
+    height: 100px;
+    width: 190px;
+  }
+  
 
 /* Footer */
 
@@ -211,10 +254,12 @@ hr {
     .contenedor {
         margin: none;
     }
-    .art1{
+
+    .art1 {
         padding: 0px
     }
-    .art2{
+
+    .art2 {
         padding: 0%;
     }
 
@@ -246,14 +291,18 @@ hr {
         margin: none;
     }
 
-    .mockuptarjetas{
+    .slidemarcas2{
+        display: none;
+    }
+
+    .mockuptarjetas h5, p{
         display: none;
     }
 
 }
 
 @media screen and (min-width: 700.90px) {
-    .carousel{
+    .carousel {
         display: none;
     }
 }
